@@ -1,7 +1,7 @@
 # Key Engine
-This is a game engine for simple 2D games.
+This is a game engine for learning about game engines.
 
-Its architecture is modelled off the Sparky engine.
+To run the Key Engine, navigate to the build folder and run `key-engine`.
 
 Currently, the Key engine boasts zero features.
 
