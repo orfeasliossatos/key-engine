@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/orfeas/Projects/key-engine/build/release/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

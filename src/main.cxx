@@ -1,6 +1,13 @@
 #include <iostream>
 #include "version.h"
 
+
+#ifdef DEBUG
+    #define LOG(x) std::cout << x << std::endl;
+#else
+    #define LOG(x)
+#endif
+
 int main()
 {
     std::cout << "Version " << key_engine_VERSION_MAJOR << "." 

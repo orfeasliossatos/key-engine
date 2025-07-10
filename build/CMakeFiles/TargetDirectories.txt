@@ -1,3 +1,0 @@
-/home/orfeas/Projects/key-engine/build/CMakeFiles/key_engine.dir
-/home/orfeas/Projects/key-engine/build/CMakeFiles/edit_cache.dir
-/home/orfeas/Projects/key-engine/build/CMakeFiles/rebuild_cache.dir
