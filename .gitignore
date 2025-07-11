@@ -2,4 +2,6 @@
 build/*
 
 # Except for the executable
+!build/release/
+build/release/*
 !build/release/key_engine
