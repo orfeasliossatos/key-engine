@@ -8,6 +8,9 @@ project(key_engine VERSION 0.0.1)
 set(CMAKE_CXX_STANDARD 23)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
+# Explicitly link to OpenGL
+find_package(OpenGL REQUIRED)
+
 # Allows the engine version number to be accessible from source
 configure_file(version.h.in version.h)
 
@@ -18,6 +21,9 @@ add_executable(key_engine main.cxx)
 target_include_directories(key_engine PUBLIC 
     ${PROJECT_BINARY_DIR}
 )
+
+# Shows CMake where the libraries are.
+add_subdirectory(lib)
 
 # Add compile definitions for conditional Debug / Release mode compilation.
 target_compile_definitions(key_engine
@@ -40,3 +46,5 @@ target_compile_options(key_engine PRIVATE
     >
 )
 
+# Links the libraries
+target_link_libraries(key_engine PRIVATE glfw OpenGL::GL)
