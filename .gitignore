@@ -1,0 +1,5 @@
+# Ignore files in the build folder
+build/*
+
+# Except for the executable
+!build/release/key_engine
