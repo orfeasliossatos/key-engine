@@ -24,6 +24,7 @@ target_include_directories(key_engine PUBLIC
 
 # Shows CMake where the libraries are.
 add_subdirectory(lib)
+add_subdirectory(core)
 
 # Add compile definitions for conditional Debug / Release mode compilation.
 target_compile_definitions(key_engine
@@ -47,4 +48,7 @@ target_compile_options(key_engine PRIVATE
 )
 
 # Links the libraries
-target_link_libraries(key_engine PRIVATE glfw OpenGL::GL)
+target_link_libraries(key_engine PRIVATE 
+    glfw 
+    OpenGL::GL
+    graphics)

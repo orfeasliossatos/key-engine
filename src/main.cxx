@@ -1,5 +1,7 @@
 #include <iostream>
+
 #include <GLFW/glfw3.h>
+#include "core/graphics/window.h"
 #include "version.h"
 
 #ifdef DEBUG
@@ -10,28 +12,17 @@
 
 int main(void)
 {
-    // Initialize the library
-    if (!glfwInit())
-        return -1;
+    using namespace core;
+    using namespace graphics;
+    Window window("Hello World", 650, 400);
+    
+    std::cout << GLFW_TRUE << std::endl;
 
-    GLFWwindow* window;
-    window = glfwCreateWindow(650, 480, "Hello World", NULL, NULL);
-    if (!window)
+    while (!window.shouldClose())
     {
-        glfwTerminate();
-        return -1;
+        window.clear();
+        window.update();
     }
 
-    glfwMakeContextCurrent(window);
-
-
-    while (!glfwWindowShouldClose(window))
-    {
-        glClear(GL_COLOR_BUFFER_BIT);
-        glfwSwapBuffers(window);
-        glfwPollEvents();
-    }
-
-    glfwTerminate();
     return 0;
 }
