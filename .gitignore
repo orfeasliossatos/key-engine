@@ -7,5 +7,7 @@ build/release/*
 !build/release/key_engine
 
 # Files for watching and building
+goodmorning
 build-watch
 watched
+rebuild
