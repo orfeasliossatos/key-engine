@@ -19,5 +19,8 @@ The following packages are required when building.
 #### For GLFW
 Wayland, X11 and xkbcommon. See [glfw.org](https://www.glfw.org/docs/latest/compile_guide.html#compile_deps_wayland) for more information.
 
+#### For GLEW
+`libglfw3-dev libgl1-mesa-dev libglu1-mesa-dev`
+
 ## History
 Development began in July 2025. Refer to `CHANGELOG.md` for more details.
