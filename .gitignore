@@ -5,3 +5,7 @@ build/*
 !build/release/
 build/release/*
 !build/release/key_engine
+
+# Files for watching and building
+build-watch
+watched
